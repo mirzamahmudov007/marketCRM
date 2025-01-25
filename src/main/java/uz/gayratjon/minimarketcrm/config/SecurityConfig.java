@@ -52,6 +52,7 @@ public class SecurityConfig {
                 .requestMatchers("/api/categories/**").permitAll() // Kategoriyalar endpointlari ruxsat berilgan
                 .requestMatchers("/api/reports/**").permitAll()
                 .requestMatchers("/api/sales/**").permitAll()
+                .requestMatchers("/api/inventory/**").permitAll()
                 .anyRequest().authenticated(); // Qolgan barcha so'rovlar autentifikatsiya talab qiladi
 
         // JWT filtri qo'shish
